@@ -13,6 +13,10 @@
   	<failOnMissingWebXml>false</failOnMissingWebXml>
   	<servlet-version>4.0.1</servlet-version>
   	<spring-version>5.2.3.RELEASE</spring-version>
+  	<hibernate-version>5.4.1.Final</hibernate-version>
+  	<hibernate-validator>5.4.1.Final</hibernate-validator>
+  	<mysql-connector-version>8.0.15</mysql-connector-version>
+  	<jackson.version>2.10.3</jackson.version>
   </properties>
   
   <dependencies>
@@ -29,7 +33,39 @@
   		<artifactId>spring-webmvc</artifactId>
   		<version>${spring-version}</version>
   	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-orm</artifactId>
+  		<version>${spring-version}</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-core</artifactId>
+  		<version>${hibernate-version}</version>
+  	</dependency>
   
+  	 <dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-validator</artifactId>
+  		<version>${hibernate-validator}</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>mysql</groupId>
+  		<artifactId>mysql-connector-java</artifactId>
+  		<version>${mysql-connector-version}</version>
+  	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>${jackson.version}</version>
+	</dependency>
+
+  	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
